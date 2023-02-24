@@ -15,7 +15,7 @@ import logo from '../logo1.png';
 
   return (
     <div >
-      <Navbar className="nav" >
+      <Navbar className="nav1" >
         <Navbar.Brand href="#home" style={{color:"white"}}>
        
         <img className="logo" src={logo} width="50" height="50" style={{marginBlockStart:13}} alt="hi" />
@@ -23,10 +23,10 @@ import logo from '../logo1.png';
             
     
  
-          <Nav className>
+          <Nav className='nav2'>
          {
           isAuthenticated? (
-            <ul className='flex-cont'>
+           <div className='flex-cont'> <ul >
           
           <li><h2>{user.name}</h2></li>
           
@@ -38,7 +38,7 @@ import logo from '../logo1.png';
           Log Out
         </Button></li>
         <li><img src={user.picture} alt={user.name} className="profilepic" />
-       </li>  </ul>  )
+       </li>  </ul> </div>  )
           :
           (<Button
               variant="primary"

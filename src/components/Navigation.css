@@ -1,19 +1,25 @@
 .logo{
     margin: 20px;
+    margin-left: 120px;
 }
-.nav{
+.nav1{
     background-color: rgb(232, 232, 232);
     display: flex;
-    flex: space-between;
-    flex-direction: row;
-    align-items: right;
+    justify-content: flex-end;
+    justify-content: space-between;
+
+
 }
-.flex-cont{
-   
+.nav2{
+    /* background-color: rgb(232, 232, 232); */
     display: flex;
     justify-content: flex-end;
-    float: right;
-   /* padding: 10px; */
+    margin-left: 47%;
+    margin-right: 5%;
+}
+.div{
+    display: flex;
+  justify-content: flex-end;
 
 }
 

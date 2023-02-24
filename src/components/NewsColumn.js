@@ -7,7 +7,7 @@ const NewsColumn = () => {
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const response = await axios.get('https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=c4206027ac8d48cd833ee74d4c4e6afa');
+      const response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c4206027ac8d48cd833ee74d4c4e6afa');
       setArticles(response.data.articles);
     };
 
@@ -15,7 +15,7 @@ const NewsColumn = () => {
   }, []);
 
   return (
-    <div className="news-column">
+    <div className="news-container">
       {articles.map((article, index) => (
         <div className="news-item" key={index}>
           <img src={article.urlToImage} alt="Article thumbnail" />
@@ -29,3 +29,4 @@ const NewsColumn = () => {
 };
 
 export default NewsColumn;
+

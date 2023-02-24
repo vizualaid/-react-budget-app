@@ -23,6 +23,7 @@ function App() {
 
   return (
     <>
+    <Navigation></Navigation>
       <Container className="my-4">
         <Stack direction="horizontal" gap="2" className="mb-4">
           <h1 className="me-auto">Budgets</h1>

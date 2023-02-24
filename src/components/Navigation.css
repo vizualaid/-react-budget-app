@@ -2,5 +2,38 @@
     margin: 20px;
 }
 .nav{
-    background-color: rgb(109, 148, 230);
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    flex: space-between;
+    flex-direction: row;
+    align-items: right;
 }
+.flex-cont{
+   
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+   /* padding: 10px; */
+
+}
+
+.profilepic{
+  width: 40%;
+  border-radius: 50%;
+    }
+
+    ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }

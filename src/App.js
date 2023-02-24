@@ -28,7 +28,7 @@ function App() {
   return (
     <>
     <Navigation></Navigation>
-    <NewsColumn></NewsColumn>
+    
     {/* <NewsColumn/> */}
       <Container className="my-4">
         <Stack direction="horizontal" gap="2" className="mb-4">
@@ -75,6 +75,7 @@ function App() {
           <TotalBudgetCard />
         </div>
       </Container>
+      
       <AddBudgetModal
         show={showAddBudgetModal}
         handleClose={() => setShowAddBudgetModal(false)}
@@ -88,7 +89,11 @@ function App() {
         budgetId={viewExpensesModalBudgetId}
         handleClose={() => setViewExpensesModalBudgetId()}
       />
+   
+      <NewsColumn></NewsColumn>
+      
     </>
+    
   )
 }
 

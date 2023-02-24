@@ -8,6 +8,10 @@ import UncategorizedBudgetCard from "./components/UncategorizedBudgetCard"
 import TotalBudgetCard from "./components/TotalBudgetCard"
 import { useState } from "react"
 import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "./contexts/BudgetsContext"
+import Navigation from "./components/Navigation"
+import NewsColumn from "./components/NewsColumn"
+// import NewsColumn from "./components/NewsColumn"
+
 
 function App() {
   const [showAddBudgetModal, setShowAddBudgetModal] = useState(false)
@@ -23,6 +27,9 @@ function App() {
 
   return (
     <>
+    <Navigation></Navigation>
+    <NewsColumn></NewsColumn>
+    {/* <NewsColumn/> */}
       <Container className="my-4">
         <Stack direction="horizontal" gap="2" className="mb-4">
           <h1 className="me-auto">Budgets</h1>

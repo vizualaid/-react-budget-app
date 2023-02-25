@@ -9,15 +9,15 @@ import logo from '../logo1.png';
 // const logo = require('./logo1.png'); 
  function Navigation(){
   return (
-    <div >
+    <div className="navmain" >
       <Navbar className="nav" >
         <Navbar.Brand href="#home" style={{color:"white"}}>
         {/* <img src={require('./logo1.png')} /> */}
         <img className="logo" src={logo} width="50" height="50" style={{marginBlockStart:13}} alt="hi" />
             </Navbar.Brand> 
           <Nav className>
-          <Nav.Link href="#link1" style={{color:"white"}}>Home</Nav.Link> 
-          <Nav.Link href="#link2" style={{color:"white"}}>Blogs</Nav.Link>
+          <Nav.Link href="#link1" style={{color:"black"}}>Home</Nav.Link> 
+          <Nav.Link href="#linkto" style={{color:"black"}}>News</Nav.Link>
           </Nav> 
         </Navbar>
     </div>

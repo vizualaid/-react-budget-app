@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './NewsColumn.css';
 
+
 const NewsColumn = () => {
   const [articles, setArticles] = useState([]);
 
@@ -14,8 +15,10 @@ const NewsColumn = () => {
     fetchArticles();
   }, []);
 
+
   return (
-    <div className="news-container">
+
+    <div id="linkto" className="news-container">
       {articles.map((article, index) => (
         <div className="news-item" key={index}>
           <img src={article.urlToImage} alt="Article thumbnail" />
@@ -25,8 +28,10 @@ const NewsColumn = () => {
         </div>
       ))}
     </div>
+  
   );
 };
 
 export default NewsColumn;
+
 

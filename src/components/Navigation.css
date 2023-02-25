@@ -2,5 +2,12 @@
     margin: 20px;
 }
 .nav{
-    background-color: rgb(109, 148, 230);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.navmain{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
 }
